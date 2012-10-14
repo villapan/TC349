@@ -26,21 +26,21 @@ h2 {
 	text-align: center;
 }
 
-
 .container {
 	margin: 0 auto;
-	width: 740px;
-}
+	width: 750px;
 	
+}
+
 section {
-	width: 500px;
-	margin-right: 20px;
-	float: left;
+	float:left;
+	width: 470px;
+	margin-right: 30px;
 }
 
 aside {
-	width: 220px;
 	float: left;
+	width: 250px;
 }
 
 img {
@@ -57,31 +57,37 @@ p, li {
 	color: #000000;
 }
 
-a {
-	font-family: Helvetica;
-  	font-weight: bold;
-  	color: #708290;
-  	text-decoration: none;
+#navbar li {
+display: inline;
+ist-style: none;
 }
 
-a:hover {
-	font-family: Helvetica;
-	font-weight: bold;
-	text-decoration: underline;
-	color: #e3e6cb;
+#navbar a {
+padding: 0px 15px 0px 60px;
+font-family: Helvetica;
+   font-weight: bold;
+   color: #708290;
+   text-decoration: none;
 }
 
-a:visited {
-	font-family: Helvetica;
-	font-weight: bold;
-	text-decoration: none;
-	color: #992400;
+#navbar a:hover {
+font-family: Helvetica;
+font-weight: bold;
+text-decoration: underline;
+color: #e3e6cb;
 }
 
-a:active {
-	font-family: Helvetica;
-	font-weight: bold;
-	text-decoration: none;
-	background-color: #571d1b;
-	color: #f5e5e5;
+#navbar a:visited {
+font-family: Helvetica;
+font-weight: bold;
+text-decoration: none;
+color: #992400;
+}
+
+#navbar a:active {
+font-family: Helvetica;
+font-weight: bold;
+text-decoration: none;
+background-color: #571d1b;
+color: #f5e5e5;
 }
