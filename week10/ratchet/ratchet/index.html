@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ken's Mobile Site</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Set Apple icons for when prototype is saved to home screen -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link rel="stylesheet" href="ratchet.css">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet.js"></script>
+
+    <!-- Intro paragraph styles. Delete once you start using this page -->
+    <style type="text/css">
+        .welcome {
+          line-height: 1.5;
+          color: #555;
+        }
+    </style>
+
+  </head>
+  <body>
+
+  <!-- Make sure all your bars are the first things in your <body> --> 
+  <header class="bar-title">
+      <a class="button-prev" href="#">
+        Previous
+      </a>
+      <h1 class="title">Ken's Site</h1>
+      <a class="button-next" href="#">
+        Next
+      </a>
+  </header>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content">
+  	  <center>
+       <form>
+          <input type="search" placeholder="Search">
+      </form>
+      <a class="button">Home</a>
+      <a class="button-main">Link</a>
+      <a class="button-positive">Link</a>
+      <a class="button-negative">Link</a>
+      </center>
+    <div class="content-padded">
+      <h2>Content</h2>
+      <p class="welcome">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nunc quis nunc dictum eu rutrum metus sodales. Nullam at malesuada ipsum. In ut enim arcu. Etiam volutpat, nibh vel iaculis consectetur, metus lacus commodo dui, at ultricies mauris enim ac quam. Sed dolor turpis, laoreet eget egestas sed, placerat ut felis. Quisque hendrerit enim eu elit posuere et consectetur orci venenatis. Praesent dignissim est sed urna vulputate ullamcorper. Praesent at venenatis tortor. Sed consequat, eros quis tempor pulvinar, nunc lorem faucibus mi, quis vehicula mi dolor quis urna. Integer vestibulum convallis risus, a rutrum lectus suscipit et. Donec ante lorem, fermentum sed dapibus a, aliquam non eros. Pellentesque volutpat lorem vel erat gravida quis posuere tortor imperdiet. Mauris viverra purus sit amet tellus adipiscing eu hendrerit lacus pretium. Duis tempor neque nec nulla dictum faucibus pulvinar ligula dictum.</p>
+      <br />
+      <br />
+      <h2>Media Content</h2>
+      <ul class="segmented-controller">
+          <li class="active">
+            <a href="#item1">Images</a>
+          </li>
+          <li>
+            <a href="#item2">Videos</a>
+          </li>
+          <li>
+            <a href="#item3">Resources</a>
+          </li>
+        </ul>
+        <ul class="inset list">
+          <li id="item1" class="segmented-controller-item active">
+            Images
+          </li>
+          <li id="item2" class="segmented-controller-item">
+            Videos
+          </li>
+          <li id="item3" class="segmented-controller-item">
+            <a href="www.reddit.com">Reddit</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+  </body>
+</html>
