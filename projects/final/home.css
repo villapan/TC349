@@ -1,45 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+
 body {
-	background: #e7e4db;
+	background-image: url(stressed_linen/stressed_linen.png);
 	line-height: 1.4em;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 h1 {
-	margin: 10px;
-	height:100px;
+	margin: 10px -8px 0px 0px;
+	height:300px;
 	text-align: center;
-	padding: 20px 15px;
+	padding: 0px;
 	color: #fff4cc;
 	text-shadow: 1px 1px 2px #424242;
 	font-size: 32px;
 	text-indent: -9000px;
+	background-image: url(aimandexplode.jpg);
+	width: 802px;
 }
 
 h2 {
 	margin: 10px;
 	padding: 5px;
-	color: #b0ae8d;
+	color: #ffffff;
 	text-align: center;
 }
 
 .container {
+	background-color: #fffbea;
 	margin: 0 auto;
 	width: 802px;
 	
 }
 
-article {
+section {
 	width: 225px;
-	height: 200px;
-	padding: 10px;
+	height: 227px;
+	padding: 11px;
 	margin: 10px;
 	float: left;
-	background: #f3f3f3;
+	background: #340300;
 }
 
-.content {;
+#content {
 	margin-top: 10px;
-	background-color: #fff;
+	background-color: #fffbea;
+	float: clear;
 }
 
 a {
@@ -52,6 +59,7 @@ a:hover {
 	font-weight: bold;
 	text-decoration: underline;
 	color: #e3e6cb;
+	cursor: crosshair; 
 }
 
 a:visited {
@@ -68,7 +76,7 @@ a:active {
 }
 
 .navigation {
-	background-color: #000;
+	background-image: url(navbg.gif);
 	margin: 0 auto;
 	padding: 1px;
 	width: 800px;
@@ -81,11 +89,57 @@ a:active {
 }
 
 #nav1 a {
-	padding-left: 50px;
-	padding-right: 50px;
+	font-size: 18px;
+	padding-left: 40px;
+	padding-right: 45px;
+	border: 5px #fff;
 }
 
 #nav1 a:hover {
   text-decoration: none;
   cursor: crosshair; 
+}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+@media (max-width: 320px) {
+	.container {
+		width: 100%;
+		margin: 0;
+	}
+	
+	h1 {
+		width: 100%;
+		background-image: url(bgmobile.jpg);
+	}
+	
+	.navigation {
+	background-image: url(navbgmobile.gif);
+	margin: 0 auto;
+	padding: 1px 1px 20px 1px;
+	width: 100%;
+	height: 100px;
+    }
+	
+	#nav1 a {
+	font-size: 20px;
+	padding-left: 50px;
+	padding-right: 45px;
+	margin-bottom: 40px;
+    }
+	
+	#content {
+	width: 100%;
+    }
+	
+	section {
+	margin: 25px;
+	}
+	
 }

@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image: url(stressed_linen/stressed_linen.png);
+	line-height: 1.4em;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	margin: 10px -8px 0px 0px;
+	height:300px;
+	text-align: center;
+	padding: 0px;
+	color: #fff4cc;
+	text-shadow: 1px 1px 2px #424242;
+	font-size: 32px;
+	text-indent: -9000px;
+	background-image: url(aimandexplode.jpg);
+	width: 802px;
+}
+
+h2 {
+	margin: 10px;
+	padding: 5px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.container {
+	background: #fffbea;
+	margin: 0 auto;
+	width: 802px;
+	
+}
+
+#content {
+	margin-top: 10px;
+	padding: 0px 0px 10px 8px;
+	background-color: #fffbea;
+	float: clear;
+}
+
+#dobby {
+	width: 480px;
+	height: 350px;
+	padding: 11px;
+	margin: 10px;
+	float: left;
+	background-image: url(shattered.gif);
+}
+
+#dobbycontent {
+	width: 225px;
+	height: 243px;
+	padding: 11px;
+	margin: 10px;
+	float: left;
+	background: #340300;
+	color: #fff;
+}
+
+#dobby img {
+	padding: 0px 0px 0px 40px;
+	width: 400px;
+	height: auto;
+
+}
+
+#geebee {
+	width: 480px;
+	height: 350px;
+	padding: 11px;
+	margin: 10px;
+	float: left;
+	background-image: url(shattered.gif);
+}
+
+#geebee img {
+	padding: 0px 0px 0px 40px;
+	width: 400px;
+	height: auto;
+
+}
+
+#geebeecontent {
+	width: 225px;
+	height: 227px;
+	padding: 11px;
+	margin: 10px;
+	float: left;
+	background: #340300;
+	color: #fff;
+}
+
+#bonk {
+	width: 285px;
+	height: 350px;
+	padding: 11px 11px 25px 11px;
+	margin: 10px;
+	float: left;
+	background-image: url(shattered.gif);
+}
+
+#bonk img {
+	padding: 0px 0px 0px 40px;
+	width: 200px;
+	height: auto;
+}
+
+#bonkcontent {
+	width: 415px;
+	height: 227px;
+	padding: 11px;
+	margin: 10px;
+	float: left;
+	background: #340300;
+	color: #fff;
+	text-align: right;
+}
+
+section.tableleft {
+	width: 320px;
+	height: 250px;
+	padding: 11px 11px 30px 27px;
+	margin: 10px;
+	float: left;
+	background-image: url(shattered.gif);
+}
+
+
+section.tableleftcontent {
+	width: 350px;
+	height: 227px;
+	padding: 11px;
+	margin: 10px 10px 51px 10px;
+	float: left;
+	background: #340300;
+	color: #fff;
+}
+
+section.tableright {
+	width: 320px;
+	height: 250px;
+	padding: 11px 11px 30px 27px;
+	margin:  20px 30px 30px 10px;
+	float: right;
+	background-image: url(shattered.gif);
+}
+
+
+section.tablerightcontent {
+	width: 350px;
+	height: 227px;
+	padding: 11px;
+	margin: 20px 10px 70px 10px;
+	float: right;
+	background: #340300;
+	color: #fff;
+	text-align: right;
+}
+
+a {
+  font-weight: bold;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #e3e6cb;
+	cursor: crosshair; 
+}
+
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #f5e5e5;
+}
+
+a:active {
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #571d1b;
+	color: #f5e5e5;
+}
+
+.navigation {
+	background-image: url(navbg.gif);
+	margin: 0 auto;
+	padding: 1px;
+	width: 800px;
+	height: 50px;
+}
+
+#nav1 li {
+	display: inline;
+	padding: 5px;	
+}
+
+#nav1 a {
+	font-size: 18px;
+	padding-left: 40px;
+	padding-right: 45px;
+	border: 5px #fff;
+}
+
+#nav1 a:hover {
+  text-decoration: none;
+  cursor: crosshair; 
+}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+@media (max-width: 320px) {
+	
+	.container {
+		width: 100%;
+		margin: 0;
+	}
+	
+	h1 {
+		width: 100%;
+		background-image: url(bgmobile.jpg);
+	}
+	
+	.navigation {
+	background-image: url(navbgmobile.gif);
+	margin: 0 auto;
+	padding: 1px 1px 20px 1px;
+	width: 100%;
+	height: 100px;
+    }
+	
+	#nav1 a {
+	font-size: 20px;
+	padding-left: 50px;
+	padding-right: 45px;
+	margin-bottom: 40px;
+    }
+	
+	#content {
+	width: 100%;
+    }
+	
+	img {
+	width: 100%;
+	height: auto;
+    }
+	
+	section.tableleft {
+	width: 100%;
+	height: 250px;
+	padding: 0px;
+	margin: 0px;
+	background-image: url(shattered.gif);
+	float: none;
+    }
+
+
+section.tableleftcontent {
+	width: 100%;
+	height: 227px;
+	padding: 0px;
+	margin: 0px;
+	background: #340300;
+	color: #fff;
+	float: none;
+    }
+
+section.tableright {
+	width: 100%;
+	height: 250px;
+	padding: 0px;
+	margin:  0px;
+	background-image: url(shattered.gif);
+	float: none;
+    }
+
+section.tablerightcontent {
+	width: 100%;
+	height: 227px;
+	padding: 0px;
+	margin: 0px;
+	background: #340300;
+	color: #fff;
+	text-align: left;
+	float: none;
+    }
+	
+section img {
+	width: 100%;
+    }
+	
+	#dobby {
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+	background-image: url(shattered.gif);
+    }
+
+#dobbycontent {
+	width: 100%;
+	height: 243px;
+	padding: 0px;
+	margin-bottom: 10px;
+	background: #340300;
+	color: #fff;
+    }
+
+#dobby img {
+	padding: 0px;
+	width: 100%;
+	height: auto;
+
+}
+
+#geebee {
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+	background-image: url(shattered.gif);
+}
+
+#geebee img {
+	padding: 0px 0px 0px 0px;
+	width: 100%;
+	height: auto;
+
+}
+
+#geebeecontent {
+	width: 100%;
+	height: 227px;
+	padding: 0px;
+	margin-bottom: 10px;
+	background: #340300;
+	color: #fff;
+}
+
+#bonk {
+	width: 100%;
+	height: 350px;
+	padding: 11px 11px 25px 11px;
+	margin: 0px;
+	background-image: url(shattered.gif);
+}
+
+#bonk img {
+	padding: 0px 0px 0px 40px;
+	width: 200px;
+	height: auto;
+}
+
+#bonkcontent {
+	width: 100%;
+	height: 227px;
+	padding: 0px;
+	margin-bottom: 10px;
+	background: #340300;
+	color: #fff;
+	text-align: left;
+}
+
+	
+}

@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen">
 <title>Contact</title>
 </head>
@@ -11,18 +12,54 @@
     	<header>
         	<h1>Contact</h1>
         </header>
-        <section id="content">
-        <div class="navigation">
-        <ul id="nav1">
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="designer.html">Designer</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        </div>
-        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra nisl a tellus consectetur suscipit. Vestibulum porttitor est sit amet est sodales fermentum molestie nisl aliquam. Etiam et odio nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam leo ante, placerat quis ultrices vel, fringilla eget lorem. Morbi non eros at tellus viverra rutrum. Quisque convallis luctus nibh, ac mollis tellus malesuada vel. Vivamus posuere purus eget purus gravida luctus.</p>
-            <p>Morbi nec leo id mi consectetur molestie at et purus. Ut non odio sem. Vivamus molestie enim ac justo placerat adipiscing. Praesent eu leo lorem. Nam quis ipsum ac elit volutpat laoreet euismod ultricies ligula. Aenean ultrices turpis id sem luctus egestas eu sit amet enim. Cras iaculis bibendum felis in eleifend. Nulla at ipsum vel lacus aliquet sollicitudin a vitae magna. Donec eleifend auctor dolor, consectetur vestibulum dui lobortis vitae. Praesent nec sem urna, vitae ornare risus. Suspendisse mi elit, cursus et adipiscing sit amet, fringilla vel odio. Sed nec felis ac lectus accumsan lobortis in non ante. Integer vulputate, neque interdum vulputate dignissim, purus tellus vulputate ante, id aliquam nisl lorem at mi. Aliquam dui elit, dignissim in condimentum in, dapibus ut risus.</p>
-            <p> Quisque suscipit fermentum fringilla. Maecenas blandit malesuada sem, quis egestas tellus congue vitae. Aenean nec enim a tellus porta feugiat. Quisque non consectetur lacus. Suspendisse ut ligula orci, sed scelerisque neque. Vestibulum nec lorem eget turpis posuere varius in vitae dolor. Duis congue neque eu metus semper congue.</p>  
+        <div id="content" class="clearfix">
+            <div class="navigation">
+                <ul id="nav1">
+                    <li><a href="index.html">PORTFOLIO</a></li>
+                    <li><a href="designer.html">DESIGNER</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            
+        	<div id="buttons">
+            	<a href="http://www.facebook.com/kenneth.villapando" alt="Personal Facebook"><img src="buttons/facebook.gif" /></a>
+                <a href="https://twitter.com/ken_vee" alt="Personal Twitter"><img src="buttons/twitter.gif" /></a>
+                <a href="http://aimandexplode.tumblr.com/" alt="Tumblr Portfolio"><img src="buttons/tumblr.gif" /></a>
+                <a href="mailto:villapan@msu.edu" alt="E-mail"><img src="buttons/mail.gif" /></a>
+                </div>
+                
+            <section id="contact1">
+            	<h1>248.990.2603</h1>
+                <h2>villapan@msu.edu</h2>
+            </section>
+            
+            <section id="contact2">
+            	<ul>
+                	<li>Ken Villapando</li>
+                    <li><strong>Aim and Explode Designs</strong></li>
+                    <li>villapan@msu.edu</li>
+                    <li>474 North Hubbard</li> 
+                    <li>East Lansing MI 48825</li>
+                </ul>
+            </section>
+            
+            <div id="map"><img src="hubbard.png" /></div>
+            
+            <section id="form">
+            <form method="post" action="mailto:villapan@msu.edu" enctype="text/plain">
+                <input type="text" name="username"> : name <br>
+                <input type="text" name="email"> : email <br>
+                comments <br>
+                <textarea name="comments" rows="10" cols="40 "wrap="hard">
+                </textarea>
+                <input name="redirect" type="hidden" value="index.html">
+                <input name="NEXT_URL" type="hidden" value="index.html"><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear">
+            </form>
+            </section>
+            
         </div>
     </div>
 </body>
