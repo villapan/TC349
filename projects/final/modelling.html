@@ -3,6 +3,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function OpenNewWindow(bigurl, width, height)
+{
+    var newWindow = window.open("", "pictureViewer", 
+        "location=no, directories=no, fullscreen=yes, " + 
+        "menubar=no, status=no, toolbar=no, width=" + 
+        width + ", height=" + height + ", scrollbars=yes");
+    newWindow.document.writeln("<html>");
+    newWindow.document.writeln("<body style='margin: 0 0 0 0;'>");
+    newWindow.document.writeln("<a href='javascript:window.close();'>");
+    newWindow.document.writeln("<img src='" + bigurl + 
+       "' alt='Click to close' id='bigImage'/>");
+    newWindow.document.writeln("</a>");
+    newWindow.document.writeln("</body></html>");
+    newWindow.document.close();
+}
+</script>
 <title>Aim and Explode - A Portfolio</title>
 <link rel="stylesheet" href="portfolio.css" type="text/css" media="screen">
 </head>
@@ -23,7 +40,9 @@
         <div id="content" class="clearfix">
                 <section id="dobby">
                 	<h2>DOBBY HEAD MODEL</h2>
-                	<a href="modelling/dobby.jpg" target="_new"><img src="modelling/dobbyfinal.png" /></a>
+                    <a href="#" onclick="OpenNewWindow('modelling/dobby.jpg', 470, 1915); return true;">
+   <img src="modelling/dobbyfinal.png" alt="Click..."/>
+</a>
                 </section>
                 <section id="dobbycontent">
                  	<strong><em>Dobby</em></strong><br />
@@ -42,7 +61,9 @@
 
                 <section id="bonk">
                 	<h2>BONK MODEL</h2>
-                	<a href="modelling/bonk.png" target="_new"><img src="modelling/bonk.png" /></a>
+                      <a href="#" onclick="OpenNewWindow('modelling/bonk.png', 393, 566); return true;">
+   <img src="modelling/bonk.png" alt="Click..."/>
+</a>
                 </section>
                 <section id="bonkcontent">
                  	<strong><em>Bonk</em></strong><br />
@@ -56,7 +77,9 @@
                 
                 <section id="geebee">
                 	<h2>GEEBEE MODEL</h2>
-                	<a href="modelling/geebeefinal.jpg" target="_new"><img src="modelling/geebee.png" /></a>
+                      <a href="#" onclick="OpenNewWindow('modelling/geebeefinal.jpg', 470, 804); return true;">
+   <img src="modelling/geebee.png" alt="Click..."/>
+</a>
                 </section>
                 <section id="geebeecontent">
                     <strong><em>Geebee Plane</em></strong><br />

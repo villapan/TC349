@@ -5,6 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aim and Explode - A Portfolio</title>
 <link rel="stylesheet" href="portfolio.css" type="text/css" media="screen">
+<script>
+function OpenNewWindow(bigurl, width, height)
+{
+    var newWindow = window.open("", "pictureViewer", 
+        "location=no, directories=no, fullscreen=yes, " + 
+        "menubar=no, status=no, toolbar=no, width=" + 
+        width + ", height=" + height + ", scrollbars=yes");
+    newWindow.document.writeln("<html>");
+    newWindow.document.writeln("<body style='margin: 0 0 0 0;'>");
+    newWindow.document.writeln("<a href='javascript:window.close();'>");
+    newWindow.document.writeln("<img src='" + bigurl + 
+       "' alt='Click to close' id='bigImage'/>");
+    newWindow.document.writeln("</a>");
+    newWindow.document.writeln("</body></html>");
+    newWindow.document.close();
+}
+</script>
 </head>
 
 <body>
@@ -23,7 +40,9 @@
         <div id="content" class="clearfix">
                 <section class="tableleft">
                 	<h2>PROBLEM A</h2>
-                    <a href="design/nevisflag.gif" target="_new"><img src="design/nevispreview.jpg" /></a>
+                    <a href="#" onclick="OpenNewWindow('design/nevisflag.gif', 468, 638); return true;">
+   <img src="design/nevispreview.jpg" alt="Click..."/>
+</a>
                 </section>
                   <section class="tableleftcontent">
                  	<strong><em>Nevis Flag</em></strong><br />
@@ -40,7 +59,9 @@
                 
                 <section class="tableright">
                 	<h2>PROBLEM B</h2>
-                    <a href="design/stamps.jpg" target="_new"><img src="design/stamppreview.jpg" /></a>
+                    <a href="#" onclick="OpenNewWindow('design/stamps.jpg', 775, 612); return true;">
+   <img src="design/stamppreview.jpg" alt="Click..."/>
+</a>
                 </section>
                 <section class="tablerightcontent">
                  	<strong><em>Stamp Collection</em></strong><br />
@@ -57,7 +78,9 @@
                 
                  <section class="tableleft">
                 	<h2>PROBLEM C</h2>
-                    <a href="design/winelabels.jpg" target="_new"><img src="design/winelabelspreview.jpg" /></a>
+                    <a href="#" onclick="OpenNewWindow('design/winelabels.jpg', 612, 792); return true;">
+   <img src="design/winelabelspreview.jpg" alt="Click..."/>
+</a>
                 </section>
                   <section class="tableleftcontent">
                  	<strong><em>Wine Labels</em></strong><br />
@@ -74,7 +97,9 @@
                 
                  <section class="tableright">
                 	<h2>PROBLEM D</h2>
-                    <a href="design/cowswithguns.jpg" target="_new"><img src="design/cowspreview.jpg" /></a>
+                    <a href="#" onclick="OpenNewWindow('design/cowswithguns.jpg', 324, 655); return true;">
+   <img src="design/cowspreview.jpg" alt="Click..."/>
+</a>
                 </section>
                   <section class="tablerightcontent">
                  	<strong><em>Cows with Guns</em></strong><br />
@@ -91,7 +116,9 @@
                 
                 <section class="tableleft">
                 	<h2>PROBLEM E</h2>
-                    <a href="design/currency.jpg" target="_new"><img src="design/currencypreview.jpg" /></a>
+                    <a href="#" onclick="OpenNewWindow('design/currency.jpg', 496, 874); return true;">
+   <img src="design/currencypreview.jpg" alt="Click..."/>
+</a>
                 </section>
                   <section class="tableleftcontent">
                  	<strong><em>Currency</em></strong><br />
@@ -108,7 +135,9 @@
                 
                 <section class="tableright">
                 	<h2>PROBLEM F</h2>
-                    <a href="design/HHH.jpg" target="_new"><img src="design/hhhpreview.jpg" /></a>
+                    <a href="#" onclick="OpenNewWindow('design/HHH.jpg', 792, 1224); return true;">
+   <img src="design/hhhpreview.jpg" alt="Click..."/>
+</a>
                 </section>
                 <section class="tablerightcontent">
                  	<strong><em>Head, Heart, and Hand</em></strong><br />
@@ -125,7 +154,9 @@
                 
                  <section class="tableleft">
                 	<h2>PROBLEM G</h2>
-                    <a href="design/letter.gif" target="_new"><img src="design/letterpreview.jpg" /></a>
+                    <a href="#" onclick="OpenNewWindow('design/letter.gif', 612, 792); return true;">
+   <img src="design/letterpreview.jpg" alt="Click..."/>
+</a>
                 </section>
                   <section class="tableleftcontent">
                  	<strong><em>The Letter K</em></strong><br />

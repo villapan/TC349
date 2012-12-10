@@ -3,6 +3,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function OpenNewWindow(bigurl, width, height)
+{
+    var newWindow = window.open("", "pictureViewer", 
+        "location=no, directories=no, fullscreen=yes, " + 
+        "menubar=no, status=no, toolbar=no, width=" + 
+        width + ", height=" + height + ", scrollbars=yes");
+    newWindow.document.writeln("<html>");
+    newWindow.document.writeln("<body style='margin: 0 0 0 0;'>");
+    newWindow.document.writeln("<a href='javascript:window.close();'>");
+    newWindow.document.writeln("<img src='" + bigurl + 
+       "' alt='Click to close' id='bigImage'/>");
+    newWindow.document.writeln("</a>");
+    newWindow.document.writeln("</body></html>");
+    newWindow.document.close();
+}
+</script>
 <title>Aim and Explode - A Portfolio</title>
 <link rel="stylesheet" href="portfolio.css" type="text/css" media="screen">
 </head>
@@ -23,7 +40,9 @@
         <div id="content" class="clearfix">
                  <section class="tableleft">
                 	<h2>MY FOLKING HEART</h2>
-                    <a href="logos/mfh.png" target="_new"><img src="logos/heartpreview.jpg" /></a>
+                    <a href="#" onclick="OpenNewWindow('logos/mfh.png', 980, 300); return true;">
+                    <img src="logos/heartpreview.jpg" alt="Click..."/>
+</a>
                 </section>
                  <section class="tableleftcontent">
                  	<strong><em>My Folking Heart, A Blog</em></strong><br />
@@ -39,7 +58,9 @@
                 
                 <section class="tableright">
                 	<h2>CARPE AESTATEM</h2>
-                    <a href="logos/carpe.jpg" target="_new"><img src="logos/carpepreview.jpg" /></a>
+                    <a href="#" onclick="OpenNewWindow('logos/carpe.jpg', 717, 411); return true;">
+                    <img src="logos/carpepreview.jpg" alt="Click..."/>
+</a>
                 </section>
                  <section class="tablerightcontent">
                  	<strong><em>Carpe Aestatem</em></strong><br />
